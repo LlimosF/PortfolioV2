@@ -3,68 +3,7 @@ import React from "react";
 export default function About () {
   return (
     <div className="about" id="about">
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
-      <p>dezbvh</p>
+      
     </div>
   )
 }
