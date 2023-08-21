@@ -19,7 +19,7 @@ export default function Home () {
       />
       </div>
       <div className="scroll">
-        <a href="#about"><img src={Choix} className="scroll-img" alt=""></img></a>
+        <a href="#about"><img src={Choix} className="scroll-img" alt="Bouton permettant de scroll vers le bas du site"></img></a>
       </div>
     </div>
   )
