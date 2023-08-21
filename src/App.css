@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Belanosima', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgba(34, 34, 34, 0.295);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* HEADER */
+/* HEADER */
+/* HEADER */
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  margin: 0;
+  padding: 15px;
+}
+
+.navbar {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  background-color: black;
+  padding: 15px;
+}
+
+.burger {
+  width: 20px;
+}
+
+li {
   color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a {
+  text-decoration: none;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo {
+  margin-right: 50px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+#toggler, .navbar label {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
   }
-  to {
-    transform: rotate(360deg);
+
+  .list {
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
   }
+
+  .navbar label {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+  }
+  
+  #toggler:checked ~ .menu {
+      max-height: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .link-top {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .link-top {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+
+/* END HEADER */
+/* END HEADER */
+/* END HEADER */
+
+/* REDIRECT */
+/* REDIRECT */
+/* REDIRECT */
+
+.redirect-logo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  rotate: -90deg;
+  width: 30px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/* END REDIRECT */
+/* END REDIRECT */
+/* END REDIRECT */
+
+/* HOME */
+
+.home {
+  display: grid;
+  grid-template-columns: [a] 1fr [b] 1fr [c];
+  grid-template-rows: [a] 1fr [b] 1fr [c]; 
+  background-image: url(https://images.pexels.com/photos/1851243/pexels-photo-1851243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px black;
+}
+
+.typing {
+  grid-row: a / c;
+  grid-column: a / c;
+  justify-self: center;
+  align-self: center;
+}
+
+.scroll {
+  grid-row: a / c;
+  grid-column: a / c;
+  justify-self: center;
+  align-self: flex-end;
+}
+
+.scroll-img {
+  width: 50px;
+  margin-bottom: 20px;
 }
