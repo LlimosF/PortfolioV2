@@ -12,6 +12,7 @@ export default function Header () {
           <ul className="list">
             <li className="LiNavTop"><a href="#home" className="link-top">Accueil</a></li>
             <li className="LiNavTop"><a href="#about" className="link-top">à propos</a></li>
+            <li className="LiNavTop"><a href="#skill" className="link-top">Compétences</a></li>
             <li className="LiNavTop"><a href="#project" className="link-top">Projets</a></li>
             <li className="LiNavTop"><a href="#cv" className="link-top">Cv</a></li>
           </ul>
