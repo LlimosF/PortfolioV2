@@ -5,7 +5,7 @@ export default function Header () {
   return (
     <div className="header">
       <nav className="navbar container">
-        <a href="/"><h1>L.F</h1></a>
+        <a href="#home"><h1>LF</h1></a>
         <input type="checkbox" id="toggler" />
         <label for="toggler"><img src={Menu} className="burger" alt="Image permettant d'ouvrir le menu de navigation sur mobile"></img></label>
         <div className="menu">
