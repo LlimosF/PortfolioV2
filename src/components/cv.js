@@ -16,7 +16,6 @@ export default function Cv () {
     <div className="cv" id="cv">
       <div className="bloc-title section">
         <h2 className="title-section">Cv</h2>
-        <img src={CV1} alt="" className="img-title"/>
       </div>
       <div className="cv-container section">
         <button className="download" onClick={handleDownload}>Télécharger</button>

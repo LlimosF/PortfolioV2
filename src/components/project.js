@@ -84,7 +84,6 @@ export default function Project() {
     <div className="">
       <div className="bloc-title section" id="project">
         <h2 className="title-section">Projets</h2>
-        <img src={PROJET} alt="" className="img-title"/>
       </div>
       <div className="project-container">
         {projects.map((project, index) => (

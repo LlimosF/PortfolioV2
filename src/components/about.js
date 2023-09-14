@@ -13,7 +13,6 @@ export default function About () {
     <div>
       <div className="bloc-title section" id="about">
         <h2 className="title-section">à propos</h2>
-        <img src={FLORIAN} alt="" className="img-title"/>
       </div>
       <div className="about-container">
         <div className="bloc-about section">

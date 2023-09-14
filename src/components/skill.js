@@ -37,7 +37,6 @@ export default function Skill() {
     <div>
       <div className="bloc-title" id="skill">
         <h2 className="title-section">Compétences</h2>
-        <img src={SKILL} alt="" className="img-title"/>
       </div>
       <div className="skill-container">
         {skillsData.map((skill, index) => (
