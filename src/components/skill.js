@@ -11,58 +11,44 @@ import BLENDER from "./../media/blender.png";
 import GITHUB from "./../media/github.png";
 import REACT from "./../media/react.png";
 import PAINT from "./../media/paint.png";
+import FIGMA from "./../media/figma.png";
 
-export default function Skill () {
+import Scroll from "./../media/choix.png";
+
+import SKILL from "./../media/life-skills.png";
+
+const skillsData = [
+  { name: "Html", imgSrc: HTML, alt: "Logo HTML rouge" },
+  { name: "Css", imgSrc: CSS, alt: "Logo CSS rouge" },
+  { name: "JavaScript", imgSrc: JS, alt: "Logo JS rouge" },
+  { name: "Bootstrap", imgSrc: BOOTSTRAP, alt: "Logo BOOTSTRAP rouge" },
+  { name: "Php", imgSrc: PHP, alt: "Logo PHP rouge" },
+  { name: "Wordpress", imgSrc: WORDPRESS, alt: "Logo WORDPRESS rouge" },
+  { name: "MySql", imgSrc: SQL, alt: "Logo MYSQL rouge" },
+  { name: "Github", imgSrc: GITHUB, alt: "Logo GITHUB rouge" },
+  { name: "React", imgSrc: REACT, alt: "Logo REACT rouge" },
+  { name: "Blender", imgSrc: BLENDER, alt: "Logo BLENDER rouge" },
+  { name: "Paint 3d", imgSrc: PAINT, alt: "Logo PAINT rouge" },
+  { name: "Figma", imgSrc: FIGMA, alt: "Logo FIGMA rouge" },
+];
+
+export default function Skill() {
   return (
-    <div className="">
-      <hr className="separator" />
-      <h2 className="title-section">Compétences</h2>
-      <hr className="separator" />
-      <div className="skill-container" id="skill">
-        <div className="skill-card">
-          <h3 className="title-card">Html</h3>
-          <img src={HTML} alt="" className="img-skill" />
-        </div>
-        <div className="skill-card">
-          <h3 className="title-card">Css</h3>
-          <img src={CSS} alt="" className="img-skill" />
-        </div>
-        <div className="skill-card">
-          <h3 className="title-card">JavaScript</h3>
-          <img src={JS} alt="" className="img-skill" />
-        </div>
-        <div className="skill-card">
-          <h3 className="title-card">Bootstrap</h3>
-          <img src={BOOTSTRAP} alt="" className="img-skill" />
-        </div>
-        <div className="skill-card">
-          <h3 className="title-card">Php</h3>
-          <img src={PHP} alt="" className="img-skill" />
-        </div>
-        <div className="skill-card">
-          <h3 className="title-card">Wordpress</h3>
-          <img src={WORDPRESS} alt="" className="img-skill" />
-        </div>
-        <div className="skill-card">
-          <h3 className="title-card">MySql</h3>
-          <img src={SQL} alt="" className="img-skill" />
-        </div>
-        <div className="skill-card">
-          <h3 className="title-card">Github</h3>
-          <img src={GITHUB} alt="" className="img-skill" />
-        </div>
-        <div className="skill-card">
-          <h3 className="title-card">React</h3>
-          <img src={REACT} alt="" className="img-skill" />
-        </div>
-        <div className="skill-card">
-          <h3 className="title-card">Blender</h3>
-          <img src={BLENDER} alt="" className="img-skill" />
-        </div>
-        <div className="skill-card">
-          <h3 className="title-card">Paint 3d</h3>
-          <img src={PAINT} alt="" className="img-skill" />
-        </div>
+    <div>
+      <div className="bloc-title" id="skill">
+        <h2 className="title-section">Compétences</h2>
+        <img src={SKILL} alt="" className="img-title"/>
+      </div>
+      <div className="skill-container">
+        {skillsData.map((skill, index) => (
+          <div className="skill-card section" key={index}>
+            <h3 className="title-card">{skill.name}</h3>
+            <img src={skill.imgSrc} alt="" className="img-skill" />
+          </div>
+        ))}
+      </div>
+      <div className="scroll">
+        <a href="#project"><img src={Scroll} alt="Image de souris cliquable pour scroll vers le bas" className="img-scroll" /></a>
       </div>
     </div>  
   )

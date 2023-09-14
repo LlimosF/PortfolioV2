@@ -39,7 +39,7 @@ h1 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.24);
+  background-color: rgb(17, 17, 17);
   padding: 15px;
 }
 
@@ -146,6 +146,8 @@ li {
   justify-self: center;
   align-self: flex-end;
   z-index: 1;
+  display: grid;
+  justify-items: center;
 }
 
 .img-scroll {
@@ -161,16 +163,64 @@ li {
 /* ABOUT */
 /* ABOUT */
 
-.title-section {
+.about-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.img-picture {
+  width: 30%;
+  margin-left: 35%;
+}
+
+.text-about {
   color: white;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 50px;
+  padding: 40px;
+}
+
+@media screen and (min-width: 700px) {
+  .about-container {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .bloc-about {
+    display: grid;
+    grid-template-columns: [] 1fr [] 1fr [];
+  }
+
+  .img-picture {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .text-about {
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .bloc-about {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .img-picture {
+    width: 200px;
+  }
 }
 
 /* SKILL */
 /* SKILL */
 /* SKILL */
+
+.skill-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 .skill-card {
   width: 50%;
@@ -231,6 +281,72 @@ li {
   }
 }
 
+/* PROJECT */
+/* PROJECT */
+/* PROJECT */
+
+.project-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.project {
+  width: 80%;
+  margin-left: 10%;
+  border: 2px solid red;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.img-project {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.project > h2 {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 40px;
+}
+
+.description-project {
+  color: white;
+  padding: 15px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.link-btn {
+  text-transform: uppercase;
+  padding: 10px;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 800px) {
+  .project-container {
+    width: 80%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: [] 1fr [] 1fr [];
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: [] 1fr [] 1fr [] 1fr [];
+  }
+}
+
+/* END PROJECT */
+/* END PROJECT */
+/* END PROJECT */
+
 /* BACKGROUND FIXED */
 /* BACKGROUND FIXED */
 /* BACKGROUND FIXED */
@@ -249,21 +365,33 @@ li {
 /* CV */
 /* CV */
 
+.cv-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  justify-items: center;
+}
+
 .img-cv {
-  width: 80%;
-  margin-left: 10%;
   padding-top: 20px;
+  max-height: 50vh;
 }
 
 .download {
-  width: 80%;
+  width: 250px;
   padding: 10px;
-  margin-left: 10%;
   margin-top: 40px;
   text-transform: uppercase;
   color: red;
   border: 1px solid red;
   background: none;
+}
+
+.download:hover {
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+  background-color: red;
 }
 
 /* FOOTER */
@@ -278,4 +406,61 @@ li {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
+  text-transform: uppercase;
+}
+
+/* SCROLL EFFECT */
+/* SCROLL EFFECT */
+/* SCROLL EFFECT */
+
+/* ALL STYLE */
+/* ALL STYLE */
+/* ALL STYLE */
+
+.bloc-title {
+  display: grid;
+  grid-template-columns: [a] 1fr [b] 1fr [c];
+  grid-template-rows: [a] 1fr [b] 1fr [c];
+  height: 200px;
+}
+
+.title-section {
+  grid-row: a / c;
+  grid-column: a / c;
+  justify-self: center;
+  align-self: center;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+  text-shadow: 0 0 15px black;
+  padding-left: 230px;
+}
+
+.img-title {
+  grid-row: a / c;
+  grid-column: a / c;
+  align-self: center;
+  justify-self: center;
+  width: 40px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+.typing:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
 }
